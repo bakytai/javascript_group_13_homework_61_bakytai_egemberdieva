@@ -7,11 +7,16 @@ import { HeaderComponent } from './header/header.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './not-found.component';
+import { SupportComponent } from './support/support.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about/us', component: AboutUsComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path: 'support', component: SupportComponent},
+  {path: '**', component: NotFoundComponent},
 ]
 
 @NgModule({
@@ -20,7 +25,9 @@ const routes: Routes = [
     HomeComponent,
     HeaderComponent,
     ContactsComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    NotFoundComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,
