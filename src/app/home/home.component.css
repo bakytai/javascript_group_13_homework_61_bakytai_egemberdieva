@@ -1,0 +1,11 @@
+.text-block {
+  padding: 0 50px;
+  width: auto;
+  margin: 0 auto;
+}
+
+span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
